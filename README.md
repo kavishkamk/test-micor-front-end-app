@@ -1,0 +1,5 @@
+- Micro Front End Architecture
+- Using monoripos
+- use webpack
+- use module federation
+- React.js and Vue for applications
