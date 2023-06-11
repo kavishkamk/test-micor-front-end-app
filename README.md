@@ -2,4 +2,5 @@
 - Using monoripos
 - use webpack
 - use module federation
+- implement pipeline using github action and workflows
 - React.js and Vue for applications
