@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "container/**"
-  pull_request:
+      - 'container/**'
 
 defaults:
   run:
