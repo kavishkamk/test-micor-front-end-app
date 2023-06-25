@@ -35,7 +35,6 @@ jobs:
           aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws configure set default.region us-east-1
-          aws configure set aws_ec2_metadata_disabled true
-          aws s3 sync './dist/' s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest --acl public-read --follow-symlinks --delete --exclude '.git*/*'
+          aws s3 sync './container/dist/' s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest --acl public-read --follow-symlinks --delete --exclude '.git*/*'
 
 
