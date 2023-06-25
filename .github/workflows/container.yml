@@ -29,6 +29,8 @@ jobs:
 
       - name: Build applicaton
         run: npm run build
+        env:
+          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
 
       - name: Deploy to S3
         run: |
