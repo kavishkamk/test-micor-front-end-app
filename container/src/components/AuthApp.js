@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import { useHistory } from "react-router-dom";
 
-import {mount} from "marketing/MarketingApp";
+import {mount} from "auth/AuthApp";
 
 export default () => {
 
@@ -10,7 +10,7 @@ export default () => {
 
     useEffect(() => {
         const { onParentNavigate } = mount(ref.current, {
-            initailPath: history.location.pathname,
+            initialPath: history.location.pathname,
             onNavigate: ({ pathname: nextPathname}) => {
                 const { pathname } = history.location;
 
